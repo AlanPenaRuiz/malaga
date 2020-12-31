@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='img/cloud.ico')}}" />
+    <!-- Global site tag (gtag.js) - Google Ads: UA-111111-1 -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111111-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-111111-1');
+      </script>
+    <title>Malaga</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "Malaga",
+          "description": "Malaga conocida por sus hoteles de muchos pisos y los centros turísticos que sobresalen de sus playas de arena amarilla.",
+          "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f7/93/malaga.jpg?w=1100&h=600&s=1",
+          "startDate": "",
+          "performer": {
+            "@type": "Person",
+            "name": ""
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-top">
+            <div class="desc">
+                <h1 class="title">
+                    <span>Malaga</span></br>
+                     Costa mediterránea
+                </h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde eum dolores dignissimos necessitatibus?
+                 Dolor ex. Vitae molestias ab voluptas deserunt iure impedit nostrum. E
+                xplicabo accusamus, quae cupiditate soluta voluptatum qui debitis itaque dolore fugit? Dolorem, quis nostrum!
+                <ul class="icons">
+                    <li>
+                        <img src="{{ url_for('static', filename='img/cuchilleria.svg')}}" alt="icono restaurantes">
+                        <span>RESTAURANTES</br><b>a 2 minutos</b></span>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/camara-fotografica.svg')}}" alt="icono fotografia">
+                        <span>FOTOGRAFIA</span>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/marcador-de-posicion.svg')}}" alt="icono interes">
+                        <span>PUNTOS DE INTERES</span>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='img/informacion.svg')}}" alt="icono informacion">
+                        <span class="long-text">INFORMACION</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pic">
+                <a href="#img1" class="" rel="">
+                    <img class="img" src="{{ url_for('static', filename='img/mainMalaga.jpg')}}">
+                    <img class="len" src="{{ url_for('static', filename='img/magnifying_glass_plus_icon_173038.ico')}}">
+                    <span
+                    style="background-image: url('static/img/magnifying_glass_plus_icon_173038.ico');"
+                    ></span>
+                </a>
+            </div>
+        </div>
+        <div class="container-bot">
+            <div class="pic-left">
+                <a href="#img2" class="" rel="">
+                <img class="img" src="{{ url_for('static', filename='img/plaza.jpg')}}">
+                </a>
+            </div>
+            <div class="pic-right">
+                <a href="#img3" class="" rel="">
+                <img class="img" src="{{ url_for('static', filename='img/parque.jpg')}}">
+                </a>
+                <div class="button"><button class="btn">DESCUBRIR</button></div>
+                
+            </div>
+        </div>
+    </div>
+    <a href="#" class="lightbox" id="img1">
+        <span
+          style="
+            background-image: url('static/img/mainMalaga.jpg');
+          "
+        ></span>
+      </a>
+      <a href="#" class="lightbox" id="img2">
+        <span
+          style="
+            background-image: url('static/img/plaza.jpg');
+          "
+        ></span>
+      </a>
+      <a href="#" class="lightbox" id="img3">
+        <span
+          style="
+            background-image: url('static/img/parque.jpg');
+          "
+        ></span>
+      </a>
+</body>
+</html>
